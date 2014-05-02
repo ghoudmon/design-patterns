@@ -1,5 +1,6 @@
 package exemples.strategie;
 
+
 public abstract class Canard {
 
 	protected ComportementCancan comportementCancan;
@@ -19,4 +20,19 @@ public abstract class Canard {
 
 	public abstract void afficher();
 
+	public ComportementCancan getComportementCancan() {
+		return comportementCancan;
+	}
+
+	public void setComportementCancan(ComportementCancan comportementCancan) {
+		this.comportementCancan = comportementCancan;
+	}
+
+	public ComportementVol getComportementVol() {
+		return comportementVol;
+	}
+
+	public void setComportementVol(ComportementVol comportementVol) {
+		this.comportementVol = comportementVol;
+	}
 }
