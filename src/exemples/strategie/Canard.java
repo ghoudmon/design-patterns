@@ -2,11 +2,8 @@ package exemples.strategie;
 
 public abstract class Canard {
 
-	protected ComportementCancan comportementCancan;
-	protected ComportementVol comportementVol;
-
 	public void cancaner() {
-		comportementCancan.cancaner();
+		System.err.print("qui cancane");
 	}
 
 	public void nager() {
@@ -14,7 +11,7 @@ public abstract class Canard {
 	}
 
 	public void voler() {
-		comportementVol.voler();
+		System.err.print("qui vole");
 	}
 
 	public abstract void afficher();
