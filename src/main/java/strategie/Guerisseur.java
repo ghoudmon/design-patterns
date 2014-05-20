@@ -13,6 +13,11 @@ public class Guerisseur implements Personnage {
 		System.out.println("Je marche.");
 	}
 
+	@Override
+	public void combattre() {
+		System.out.println("Je combats à coup de poireaux.");
+	}
+
 	public void soigner() {
 		System.out.println("Je soigne à l'aide de plantes.");
 	}

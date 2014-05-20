@@ -12,6 +12,7 @@ public class Jouer {
 		Guerisseur guerisseur = new Guerisseur();
 		guerisseur.quisuisje();
 		guerisseur.seDeplacer();
+		guerrier.combattre();
 		guerisseur.soigner();
 		
 	}
