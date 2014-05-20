@@ -1,12 +1,13 @@
 package strategie;
 
 public class Jouer {
-	
+
 	public static void joue(Personnage personnage) {
 		personnage.quisuisje();
-		personnage.seDeplacer();
-		personnage.combattre();
-		personnage.soigner();
+		System.out.println("Se déplace de " + personnage.seDeplacer());
+		System.out.println("Inflige au combat " + personnage.combattre()
+				+ " points de vie");
+		System.out.println("Soigne " + personnage.soigner() + " points de vie");
 	}
 
 	public static void main(String[] args) {

@@ -1,12 +1,22 @@
 package strategie;
 
-public interface Personnage {
+public abstract class Personnage {
 
-	void quisuisje();
+	public Combat combat;
+	public Soin soin;
+	public Deplacement deplacement;
 	
-	void seDeplacer();
+	public abstract void quisuisje();
 	
-	void combattre();
+	public int seDeplacer() {
+		return deplacement.seDeplacer();
+	}
 	
-	void soigner();
+	public int combattre() {
+		return combat.combattre();
+	}
+	
+	public int soigner() {
+		return soin.soigner();
+	}
 }

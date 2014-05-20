@@ -1,6 +1,14 @@
 package strategie;
 
-public class Guerisseur implements Personnage {
+public class Guerisseur extends Personnage {
+
+	public Guerisseur() {
+		super();
+		combat = new CombatPoireaux();
+		deplacement = new DeplacementMarche();
+		soin = new SoinPlante();
+	}
+	
 	@Override
 	public void quisuisje() {
 		System.out.println();
@@ -8,18 +16,4 @@ public class Guerisseur implements Personnage {
 		System.out.println("Je suis un guérisseur.");
 	}
 
-	@Override
-	public void seDeplacer() {
-		System.out.println("Je marche.");
-	}
-
-	@Override
-	public void combattre() {
-		System.out.println("Je combats à coup de poireaux.");
-	}
-
-	@Override
-	public void soigner() {
-		System.out.println("Je soigne à l'aide de plantes.");
-	}
 }
