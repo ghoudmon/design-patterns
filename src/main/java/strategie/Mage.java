@@ -1,19 +1,19 @@
 package strategie;
 
-public class Guerisseur extends Personnage {
+public class Mage extends Personnage {
 
-	public Guerisseur() {
+	public Mage() {
 		super();
-		combat = new CombatPoireaux();
+		combat = new CombatSortilege();
 		deplacement = new DeplacementMarche();
-		soin = new SoinPlante();
+		soin = new SoinMagie();
 	}
 	
 	@Override
 	public void sePresenter() {
 		System.out.println();
 		System.out.println("--------------------");
-		System.out.println("Je suis un guérisseur.");
+		System.out.println("Je suis un mage.");
 	}
 
 }

@@ -1,19 +1,18 @@
 package strategie;
 
-public class Guerisseur extends Personnage {
+public class Fermier extends Personnage {
 
-	public Guerisseur() {
+	public Fermier() {
 		super();
-		combat = new CombatPoireaux();
+		combat = new CombatPacificiste();
 		deplacement = new DeplacementMarche();
-		soin = new SoinPlante();
+		soin = new SoinAlcool();
 	}
 	
 	@Override
 	public void sePresenter() {
 		System.out.println();
 		System.out.println("--------------------");
-		System.out.println("Je suis un guérisseur.");
+		System.out.println("Je suis un fermier.");
 	}
-
 }
