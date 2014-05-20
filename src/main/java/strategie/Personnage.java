@@ -2,9 +2,9 @@ package strategie;
 
 public interface Personnage {
 
-	void quisuisje();
+	void sePresenter();
 	
 	void seDeplacer();
 	
-	void combattre();
+	void seBattre();
 }
