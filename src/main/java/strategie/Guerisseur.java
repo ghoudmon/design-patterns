@@ -18,6 +18,7 @@ public class Guerisseur implements Personnage {
 		System.out.println("Je combats à coup de poireaux.");
 	}
 
+	@Override
 	public void soigner() {
 		System.out.println("Je soigne à l'aide de plantes.");
 	}

@@ -12,8 +12,14 @@ public class Guerrier implements Personnage {
 	public void seDeplacer() {
 		System.out.println("Je cours.");
 	}
-	
+
+	@Override
 	public void combattre() {
 		System.out.println("Je combats avec une épée.");
+	}
+	
+	@Override
+	public void soigner() {
+		System.out.println("Je ne soigne pas.");		
 	}
 }

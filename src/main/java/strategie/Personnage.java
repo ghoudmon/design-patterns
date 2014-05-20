@@ -7,4 +7,6 @@ public interface Personnage {
 	void seDeplacer();
 	
 	void combattre();
+	
+	void soigner();
 }
