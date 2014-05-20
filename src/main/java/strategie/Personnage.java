@@ -2,7 +2,7 @@ package strategie;
 
 public interface Personnage {
 
-	void quisuisje();
+	void sePresenter();
 	
 	void seDeplacer();
 }

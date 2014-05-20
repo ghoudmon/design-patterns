@@ -2,7 +2,7 @@ package strategie;
 
 public class Guerrier implements Personnage {
 	@Override
-	public void quisuisje() {
+	public void sePresenter() {
 		System.out.println();
 		System.out.println("--------------------");
 		System.out.println("Je suis un guerrier.");
@@ -13,7 +13,7 @@ public class Guerrier implements Personnage {
 		System.out.println("Je cours.");
 	}
 	
-	public void combattre() {
+	public void seBattre() {
 		System.out.println("Je combats avec une épée.");
 	}
 }

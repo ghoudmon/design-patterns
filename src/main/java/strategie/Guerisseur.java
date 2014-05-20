@@ -2,7 +2,7 @@ package strategie;
 
 public class Guerisseur implements Personnage {
 	@Override
-	public void quisuisje() {
+	public void sePresenter() {
 		System.out.println();
 		System.out.println("--------------------");
 		System.out.println("Je suis un guérisseur.");
@@ -13,7 +13,7 @@ public class Guerisseur implements Personnage {
 		System.out.println("Je marche.");
 	}
 
-	public void soigner() {
+	public void seSoigner() {
 		System.out.println("Je soigne à l'aide de plantes.");
 	}
 }

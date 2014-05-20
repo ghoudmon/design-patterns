@@ -5,14 +5,14 @@ public class Jouer {
 	public static void main(String[] args) {
 		// guerrier
 		Guerrier guerrier = new Guerrier();
-		guerrier.quisuisje();
+		guerrier.sePresenter();
 		guerrier.seDeplacer();
-		guerrier.combattre();
+		guerrier.seBattre();
 		// Guérisseur
 		Guerisseur guerisseur = new Guerisseur();
-		guerisseur.quisuisje();
+		guerisseur.sePresenter();
 		guerisseur.seDeplacer();
-		guerisseur.soigner();
+		guerisseur.seSoigner();
 		
 	}
 
