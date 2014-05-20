@@ -6,7 +6,7 @@ public class CombatSortilege implements Combat {
 	private Random random = new Random();
 
 	@Override
-	public int combattre() {
+	public int seBattre() {
 		return random.nextInt(7);
 	}
 }

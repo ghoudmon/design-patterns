@@ -6,17 +6,17 @@ public abstract class Personnage {
 	public Soin soin;
 	public Deplacement deplacement;
 	
-	public abstract void quisuisje();
+	public abstract void sePresenter();
 	
 	public int seDeplacer() {
 		return deplacement.seDeplacer();
 	}
 	
-	public int combattre() {
-		return combat.combattre();
+	public int seBattre() {
+		return combat.seBattre();
 	}
 	
-	public int soigner() {
-		return soin.soigner();
+	public int seSoigner() {
+		return soin.seSoigner();
 	}
 }

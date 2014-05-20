@@ -7,7 +7,7 @@ public class SoinPlante implements Soin {
 	private Random random = new Random();
 	
 	@Override
-	public int soigner() {
+	public int seSoigner() {
 		return random.nextInt(6);
 	}
 }

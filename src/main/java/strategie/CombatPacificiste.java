@@ -4,7 +4,7 @@ package strategie;
 public class CombatPacificiste implements Combat {
 
 	@Override
-	public int combattre() {
+	public int seBattre() {
 		return 0;
 	}
 }

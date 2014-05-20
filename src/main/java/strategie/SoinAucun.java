@@ -4,7 +4,7 @@ package strategie;
 public class SoinAucun implements Soin {
 	
 	@Override
-	public int soigner() {
+	public int seSoigner() {
 		return 0;
 	}
 }

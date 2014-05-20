@@ -5,12 +5,12 @@ public class Mage extends Personnage {
 	public Mage() {
 		super();
 		combat = new CombatSortilege();
-		deplacement = new DeplacementLevitation();
+		deplacement = new DeplacementMarche();
 		soin = new SoinMagie();
 	}
 	
 	@Override
-	public void quisuisje() {
+	public void sePresenter() {
 		System.out.println();
 		System.out.println("--------------------");
 		System.out.println("Je suis un mage.");

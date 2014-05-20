@@ -10,7 +10,7 @@ public class Guerisseur extends Personnage {
 	}
 	
 	@Override
-	public void quisuisje() {
+	public void sePresenter() {
 		System.out.println();
 		System.out.println("--------------------");
 		System.out.println("Je suis un guérisseur.");

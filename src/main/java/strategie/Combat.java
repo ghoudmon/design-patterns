@@ -2,5 +2,5 @@ package strategie;
 
 public interface Combat {
 
-	int combattre();
+	int seBattre();
 }

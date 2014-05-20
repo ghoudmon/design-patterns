@@ -5,12 +5,12 @@ public class Fermier extends Personnage {
 	public Fermier() {
 		super();
 		combat = new CombatPacificiste();
-		deplacement = new DeplacementAne();
+		deplacement = new DeplacementMarche();
 		soin = new SoinAlcool();
 	}
 	
 	@Override
-	public void quisuisje() {
+	public void sePresenter() {
 		System.out.println();
 		System.out.println("--------------------");
 		System.out.println("Je suis un fermier.");

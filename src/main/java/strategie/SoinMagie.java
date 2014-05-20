@@ -7,7 +7,7 @@ public class SoinMagie implements Soin {
 	private Random random = new Random();
 
 	@Override
-	public int soigner() {
+	public int seSoigner() {
 		return random.nextInt(11);
 	}
 }
