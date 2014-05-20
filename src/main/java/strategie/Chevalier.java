@@ -1,16 +1,17 @@
 package strategie;
 
-public class Guerrier implements Personnage {
+public class Chevalier implements Personnage {
+	
 	@Override
 	public void sePresenter() {
 		System.out.println();
 		System.out.println("--------------------");
-		System.out.println("Je suis un guerrier.");
+		System.out.println("Je suis un chevalier.");
 	}
 
 	@Override
 	public void seDeplacer() {
-		System.out.println("Je cours.");
+		System.out.println("Je monte à cheval.");
 	}
 
 	@Override

@@ -3,10 +3,10 @@ package strategie;
 public class Jouer {
 	
 	public static void joue(Personnage personnage) {
-		personnage.quisuisje();
+		personnage.sePresenter();
 		personnage.seDeplacer();
-		personnage.combattre();
-		personnage.soigner();
+		personnage.seBattre();
+		personnage.seSoigner();
 	}
 
 	public static void main(String[] args) {
