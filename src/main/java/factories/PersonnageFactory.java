@@ -3,11 +3,5 @@ package factories;
 
 public interface PersonnageFactory {
 
-  Guerrier createGuerrier();
-
-  GuerrierMobile createGuerrierMobile();
-
-  Travailleur createTravailleur();
-
-  Mage createMage();
+  <P extends Personnage> P createPersonnage(Class<P> classP);
 }

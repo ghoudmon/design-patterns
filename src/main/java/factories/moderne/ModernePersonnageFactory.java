@@ -3,28 +3,22 @@ package factories.moderne;
 import factories.Guerrier;
 import factories.GuerrierMobile;
 import factories.Mage;
+import factories.Personnage;
 import factories.PersonnageFactory;
-import factories.Travailleur;
 
 public class ModernePersonnageFactory implements PersonnageFactory {
 
+  @SuppressWarnings("unchecked")
   @Override
-  public Guerrier createGuerrier() {
-    return new FusilierMarin();
-  }
-
-  @Override
-  public GuerrierMobile createGuerrierMobile() {
-    return new Blinde();
-  }
-
-  @Override
-  public Mage createMage() {
-    return new Geneticien();
-  }
-
-  @Override
-  public Travailleur createTravailleur() {
-    return new SansPapiers();
+  public <P extends Personnage> P createPersonnage(Class<P> classP) {
+    if (Guerrier.class.isAssignableFrom(classP)) {
+      return (P) new FusilierMarin();
+    } else if (GuerrierMobile.class.isAssignableFrom(classP)) {
+      return (P) new Blinde();
+    } else if (Mage.class.isAssignableFrom(classP)) {
+      return (P) new Geneticien();
+    } else {
+      return (P) new SansPapiers();
+    }
   }
 }

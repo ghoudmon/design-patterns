@@ -15,10 +15,10 @@ public class Jeu {
 
   public Collection<Personnage> creerPersonnages() {
     final List<Personnage> list = new ArrayList<>();
-    list.add(factory.createGuerrier());
-    list.add(factory.createGuerrierMobile());
-    list.add(factory.createTravailleur());
-    list.add(factory.createMage());
+    list.add(factory.createPersonnage(Guerrier.class));
+    list.add(factory.createPersonnage(GuerrierMobile.class));
+    list.add(factory.createPersonnage(Travailleur.class));
+    list.add(factory.createPersonnage(Mage.class));
     return list;
   }
 
