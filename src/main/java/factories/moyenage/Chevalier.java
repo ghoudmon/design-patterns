@@ -19,7 +19,7 @@ public class Chevalier implements GuerrierMobile {
 
   @Override
   public void seBattre() {
-    System.out.println("Je me bats avec mon �p�e.");
+    System.out.println("Je me bats avec mon épée.");
   }
 
   @Override
