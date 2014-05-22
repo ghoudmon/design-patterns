@@ -1,11 +1,12 @@
 package factories.moderne;
 
+import javax.inject.Named;
 import factories.Guerrier;
 import factories.GuerrierMobile;
 import factories.Mage;
 import factories.Personnage;
 import factories.PersonnageFactory;
-
+@Named
 public class ModernePersonnageFactory implements PersonnageFactory {
 
   @SuppressWarnings("unchecked")

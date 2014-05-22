@@ -1,17 +1,20 @@
 package factories;
 
-import factories.antiquite.AntiquitePersonnageFactory;
-import factories.industrielle.IndustriellePersonnageFactory;
-import factories.moderne.ModernePersonnageFactory;
-import factories.moyenage.MoyenAgePersonnageFactory;
+import org.jboss.weld.environment.se.Weld;
+import org.jboss.weld.environment.se.WeldContainer;
 
 public class Main {
 
   public static void main(String[] args) {
-    new Jeu(new AntiquitePersonnageFactory()).joue();
-    new Jeu(new MoyenAgePersonnageFactory()).joue();
-    new Jeu(new IndustriellePersonnageFactory()).joue();
-    new Jeu(new ModernePersonnageFactory()).joue();
+    Weld weld = new Weld();
+
+    WeldContainer container = weld.initialize();
+
+    for (PersonnageFactory factory : container.instance().select(PersonnageFactory.class)) {
+      new Jeu(factory).joue();
+    }
+
+    weld.shutdown();
   }
 
 }
